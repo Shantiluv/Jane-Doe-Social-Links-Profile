@@ -32,8 +32,19 @@ body {
 }
 
 .social-links .btn:hover {
-    background-color: #e48e3d; /* Darker shade on hover */
-    border-color: #e48e3d;
+    background-color: #e6af3b; /* Darker shade on hover */
+    border-color: #e6af3b;
+}
+
+/* Prevent button color change on click */
+.social-links .btn:focus,
+.social-links .btn:active,
+.social-links .btn:focus:active {
+    background-color: #e6af3b !important; /* Your custom color */
+    border-color: #e6af3b !important; /* Keep border consistent */
+    color: white !important; /* Text color */
+    box-shadow: none; /* Remove Bootstrap's default focus glow */
+    outline: none; /* Remove browser outline */
 }
 
     
